@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ImageMaster - Conversor de Imagem para PDF</title>
+  <link rel="stylesheet" href="estilo.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>ImageMaster</h1>
+    <h2>Conversor de Imagem para PDF</h2>
+
+    <!-- Seção de upload -->
+    <div id="upload-section">
+      <form id="convert-form">
+        <label for="image-input" class="custom-file-label">Selecione uma imagem:</label>
+        <input type="file" id="image-input" accept=".png, .jpg, .jpeg" required />
+
+        <label for="image-format">Tipo de conversão:</label>
+        <select id="image-format" required>
+          <option value="png-to-pdf">PNG para PDF</option>
+          <option value="jpg-to-pdf">JPG para PDF</option>
+        </select>
+
+        <button type="submit">Converter</button>
+      </form>
+
+      <div id="progress-container" style="display: none; margin-top: 20px;">
+        <div id="progress-bar"></div>
+      </div>
+
+      <div id="timer-circle" style="display: none;"></div>
+    </div>
+
+    <!-- Seção de download -->
+    <div id="download-section" style="display: none;">
+      <h2>Conversão concluída!</h2>
+      <a id="download-link" href="#" download="converted.pdf">Baixar PDF</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
