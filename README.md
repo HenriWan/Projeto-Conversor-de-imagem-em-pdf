@@ -33,7 +33,3 @@ Abra o arquivo `frontend/index.html` no navegador.
 
 - Usamos versionamento semântico (ex: v1.0.0).
 - As versões são marcadas com tags no GitHub.
-
-## Licença
-
-MIT
