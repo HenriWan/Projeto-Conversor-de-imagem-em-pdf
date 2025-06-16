@@ -94,13 +94,15 @@ button:hover {
   display: none;
 }
 
-#progress-bar {
-  width: 0%;
-  height: 22px;
-  background: linear-gradient(90deg, #3b82f6 60%, #00c6ff 100%);
+/* --- Barra de progresso --- */
+#progress-container {
+  width: 100%;
+  background: #e0e7ef;
   border-radius: 8px;
-  transition: width 0.4s;
-}
+  overflow: hidden;
+  margin-top: 20px;
+  height: 22px;
+  display: none;
 
 /* --- Círculo de tempo (reservado, opcional) --- */
 #timer-circle {
