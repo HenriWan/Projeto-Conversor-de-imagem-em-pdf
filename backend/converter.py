@@ -37,7 +37,7 @@ async def convert_image_to_pdf(image: UploadFile = File(...)):
             status_code=500
         )
 
-    try:
+     try:
         # Cria um novo PDF
         pdf = FPDF()
         pdf.add_page()
